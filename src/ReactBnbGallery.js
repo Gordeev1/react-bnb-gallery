@@ -143,6 +143,7 @@ class ReactBnbGallery extends Component {
       prevButtonPressed,
       showThumbnails,
       preloadSize,
+      onIndexChange,
     } = omit(this.props, [
       'onClose',
       'leftKeyPressed',
@@ -207,6 +208,7 @@ class ReactBnbGallery extends Component {
                         preloadSize={preloadSize}
                         backgroundColor={null}
                         light={light}
+                        onIndexChange={onIndexChange}
                       />
                     </div>
                   </div>

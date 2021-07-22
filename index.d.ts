@@ -70,6 +70,8 @@ export type Props = {
      * Specifies the stack order of the component.
      */
     zIndex?: number
+
+    onIndexChange?: (nextIndex: number) => void;
 };
 
 export type Photo = {

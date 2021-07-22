@@ -166,6 +166,8 @@ class Gallery extends PureComponent {
 
     this.setState({
       activePhotoIndex: nextElementIndex,
+    }, () => {
+      this.props.onIndexChange(nextElementIndex);
     });
   }
 
