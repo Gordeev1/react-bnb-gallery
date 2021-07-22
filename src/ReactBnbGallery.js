@@ -44,6 +44,7 @@ const propTypes = forbidExtraProps({
   keyboard: PropTypes.bool,
   opacity: opacityValidation,
   zIndex: nonNegativeInteger,
+  children: PropTypes.element,
 });
 
 const defaultProps = {
@@ -144,6 +145,7 @@ class ReactBnbGallery extends Component {
       showThumbnails,
       preloadSize,
       onIndexChange,
+      children
     } = omit(this.props, [
       'onClose',
       'leftKeyPressed',
@@ -215,6 +217,7 @@ class ReactBnbGallery extends Component {
                 </div>
               </div>
             </div>
+            {children}
           </div>
         </FocusTrap>
       </Portal>
